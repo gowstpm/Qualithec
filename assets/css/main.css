@@ -152,6 +152,19 @@ body {
   color: #fff !important;
 }
 
+.title {
+  background-color: rgb(78, 199, 230);
+  color: white;
+}
+
+.title-border-wrap {
+  max-width: 800px;
+  position: relative;
+  background: linear-gradient(to right, rgb(58, 142, 221), rgb(77, 180, 211));
+  padding-top: 20px;
+  border-radius: 20px;
+}
+
 @media (max-width: 991px) {
   html, body {
     overflow-x: hidden;
@@ -1710,6 +1723,19 @@ footer p a {
 footer p a:hover {
   opacity: 0.75;
   color: #fff;
+}
+
+.gifplombier {
+  background-size: cover;
+  border-radius: 50px;
+  width: auto;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+.forgif .gifplombierimg {
+  text-align: center;
+  margin-left: -310px;
 }
 
 
