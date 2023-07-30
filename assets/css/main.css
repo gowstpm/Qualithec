@@ -39,6 +39,10 @@ figure, header, nav, section, article, aside, footer, figcaption {
   outline: 0;
 }
 
+body {
+  height: 1000vh;
+}
+
 /* clear fix */
 .grid:after {
   content: '';
@@ -153,16 +157,17 @@ body {
 }
 
 .title {
-  background-color: rgb(78, 199, 230);
+  
   color: white;
+  box-shadow: 0px 5px 8px rgba(0,0,0,0.25);
 }
 
 .title-border-wrap {
   max-width: 800px;
   position: relative;
-  background: linear-gradient(to right, rgb(58, 142, 221), rgb(77, 180, 211));
-  padding-top: 20px;
-  border-radius: 20px;
+  padding-top: 0px;
+  border-radius: 40px;
+  
 }
 
 @media (max-width: 991px) {
@@ -196,7 +201,7 @@ body {
 
 .section-heading h4 em {
   font-style: normal;
-  color: #4b8ef1;
+  color: rgb(255, 255, 255);
 }
 
 .section-heading img {
@@ -400,7 +405,7 @@ header
 .background-header .main-nav .logo img{
   width: 7.5pc;
   margin-top: -20px;
-  margin-left: 28px;
+  
 }
 
 .background-header .main-nav .nav {
@@ -732,7 +737,7 @@ header
     padding: 0px;
   }
   .header-area .logo {
-    margin-left: 30px;
+    
   }
   .header-area .menu-trigger {
     display: block !important;
@@ -1132,7 +1137,7 @@ About Us
 */
 
 .about-us {
-  padding-top: 130px;
+  padding-top: 0px;
   position: relative;
 }
 
@@ -1155,6 +1160,11 @@ About Us
   background-color: #fff;
   border-radius: 40px;
   margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-us .box-item p {
+  color: black;
 }
 
 .about-us .box-item h4 a {
@@ -1180,7 +1190,6 @@ About Us
 
 .about-us span {
   font-size: 14px;
-  color: #7a7a7a;
 }
 
 .about-us .right-image {
@@ -1189,7 +1198,7 @@ About Us
 }
 
 .about-us:after {
-  background-image: url(../images/about-bg.jpg);
+  background-image: url(../images/);
   width: 777px;
   height: 1132px;
   content: '';
@@ -2264,4 +2273,44 @@ responsive
   form#contact {
     padding: 30px;
   }
+}
+
+.dropdown {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropbtn {
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  font-size: 75px;
+  width: 2000px;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  outline: solid rgb(255, 255, 255);
+  background-image: url(../images/fond-abstrait-banniere-degrade-bleu-clair_8087-1851.webp);
+  background-size: 2000px;
+}
+
+.arrow {
+  margin-left: 5px;
+}
+
+.toggle {
+  display: none;
+}
+
+.dropdown-content {
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 10px;
+  display: none;
+}
+
+.toggle:checked + .dropdown-content {
+  display: block;
 }
